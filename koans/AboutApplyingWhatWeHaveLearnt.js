@@ -32,16 +32,14 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(productsICanEat.length).toBe();
+    expect(productsICanEat.length).toBe(koans.filterPizzasWithMushroomsAndNutsUgly(products));
   });
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
-
-      var productsICanEat = [];
-
-      /* solve using filter() & all() / any() */
-
-      expect(productsICanEat.length).toBe(FILL_ME_IN);
+      // I'm not sure what's expect of me here
+      // I'm guessing you want to solve the problem here, but I aleady solved it in a function with my koans object
+      // This seems to make more sense to me, since it keeps all my solutions in the same place
+      expect(koans.filterPizzasWithMushroomsAndNutsUgly(products)).toBe(koans.filterPizzasWithMushroomsAndNuts(products));
   });
 
   /*********************************************************************************/
@@ -55,14 +53,14 @@ describe("About Applying What We Have Learnt", function() {
       }
     }
     
-    expect(sum).toBe(FILL_ME_IN);
+    expect(sum).toBe(koans.sumImperative());
   });
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
 
-    var sum = FILL_ME_IN;    /* try chaining range() and reduce() */
+    /* try chaining range() and reduce() */
 
-    expect(233168).toBe(FILL_ME_IN);
+    expect(233168).toBe(koans.sumFunctional());
   });
 
   /*********************************************************************************/
@@ -75,7 +73,7 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(koans.ingredientOccurenceImperative(products)['mushrooms']);
   });
 
   it("should count the ingredient occurrence (functional)", function () {
@@ -83,7 +81,7 @@ describe("About Applying What We Have Learnt", function() {
 
     /* chain() together map(), flatten() and reduce() */
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(koans.ingredientOcurrenceFunctional(products)['mushrooms']);
   });
 
   /*********************************************************************************/
