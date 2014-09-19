@@ -3,8 +3,8 @@ function Muppet(age, hobby) {
   this.hobby = hobby; 
   
   this.answerNanny = function(){
-	return "Everything's cool!";
-  }
+    return "Everything's cool!";
+  };
 }
 
 function SwedishChef(age, hobby, mood) {
@@ -13,7 +13,7 @@ function SwedishChef(age, hobby, mood) {
   
   this.cook = function() {
     return "Mmmm soup!";
-  }
+  };
 }
 
 SwedishChef.prototype = new Muppet();
@@ -47,7 +47,7 @@ Object.prototype.beget = function () {
   function F() {}
   F.prototype = this;
   return new F();
-}
+};
 
 function Gonzo(age, hobby, trick) {
   Muppet.call(this, age, hobby);
@@ -55,7 +55,7 @@ function Gonzo(age, hobby, trick) {
   
   this.doTrick = function() {
     return this.trick;
-  }
+  };
 }
 
 //no longer need to call the Muppet (base type) constructor

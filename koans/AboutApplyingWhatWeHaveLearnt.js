@@ -34,9 +34,6 @@ describe("About Applying What We Have Learnt", function() {
   });
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
-      // I'm not sure what's expect of me here
-      // I'm guessing you want to solve the problem here, but I aleady solved it in a function with my koans object
-      // This seems to make more sense to me, since it keeps all my solutions in the same place
       expect(koans.filterPizzasWithMushroomsAndNutsUgly(products)).toBe(koans.filterPizzasWithMushroomsAndNuts(products));
   });
 
@@ -53,9 +50,6 @@ describe("About Applying What We Have Learnt", function() {
   });
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
-
-    /* try chaining range() and reduce() */
-
     expect(233168).toBe(koans.sumFunctional());
   });
 
